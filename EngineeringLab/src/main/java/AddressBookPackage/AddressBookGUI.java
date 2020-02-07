@@ -17,7 +17,7 @@ public class AddressBookGUI {
 
     @Autowired
     public AddressBookGUI() {
-        init();
+//        init();
     }
 
     public void init() {

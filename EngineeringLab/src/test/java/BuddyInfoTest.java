@@ -86,13 +86,13 @@ public class BuddyInfoTest {
         int actual = b1.getPhoneNumber();
         assertEquals(expected, actual);
     }
-    @Test
-    public void testToString() {
-        String name = "aName";
-        int number = 123;
-        String expected = "Name: " + name + " Phone Number: " + number;
-        BuddyInfo b1 = new BuddyInfo(name, number);
-        String actual = b1.toString();
-        assertEquals(expected, actual);
-    }
+//    @Test
+//    public void testToString() {
+//        String name = "aName";
+//        int number = 123;
+//        String expected = "Name: " + name + " Phone Number: " + number;
+//        BuddyInfo b1 = new BuddyInfo(name, number);
+//        String actual = b1.toString();
+//        assertEquals(expected, actual);
+//    }
 }
