@@ -83,9 +83,16 @@ public class AddressBookController {
 
     @PostMapping("/removeBuddy")
     public void removeBuddy(@RequestParam(value = "abID") int abID, @RequestParam(value = "index") int index) {
-//        removeBuddyFunction(index, ab);
-        abr.save(removeBuddyFunction(index, abr.findById(abID)));
+        if(index == -1) {
+            abr.save(removeDefaultBuddy());
+        } else {
+            abr.save(removeBuddyFunction(index, abr.findById(abID)));
+        }
         g.update(ab.getMyBuddies());
+    }
+
+    public AddressBook removeDefaultBuddy() {
+        return (abr.findById(1).getMyBuddies().remove(0));
     }
 
     public AddressBook removeBuddyFunction(int buddyId, AddressBook book) {
