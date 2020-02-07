@@ -77,27 +77,29 @@ public class AddressBookController {
         adB.addBuddy(temp);
         abr.save(adB);
         ab.addBuddy(temp);
-        g.update(ab.getMyBuddies());
+//        g.update(ab.getMyBuddies());
         return temp;
     }
 
     @PostMapping("/removeBuddy")
     public void removeBuddy(@RequestParam(value = "abID") int abID, @RequestParam(value = "index") int index) {
-        if(index == -1) {
+        if (index == -1) {
             abr.save(removeDefaultBuddy());
         } else {
             abr.save(removeBuddyFunction(index, abr.findById(abID)));
         }
-        g.update(ab.getMyBuddies());
+//        g.update(ab.getMyBuddies());
     }
 
     public AddressBook removeDefaultBuddy() {
-        return (abr.findById(1).getMyBuddies().remove(0));
+        AddressBook temp = abr.findById(1);
+        temp.getMyBuddies().remove(0);
+        return temp;
     }
 
     public AddressBook removeBuddyFunction(int buddyId, AddressBook book) {
-        for(int a = 0; a < book.getMyBuddies().size(); a++) {
-            if(book.getMyBuddies().get(a).getId() == buddyId) {
+        for (int a = 0; a < book.getMyBuddies().size(); a++) {
+            if (book.getMyBuddies().get(a).getId() == buddyId) {
                 book.getMyBuddies().remove(a);
             }
         }

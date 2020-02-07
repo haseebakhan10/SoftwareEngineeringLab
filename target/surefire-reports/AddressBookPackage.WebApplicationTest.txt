@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: AddressBookPackage.WebApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 5.19 s <<< FAILURE! - in AddressBookPackage.WebApplicationTest
+shouldNoteReturnBuddyInAddressbook  Time elapsed: 0.09 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at AddressBookPackage.WebApplicationTest.shouldNoteReturnBuddyInAddressbook(WebApplicationTest.java:42)
+Caused by: java.lang.NullPointerException
+	at AddressBookPackage.WebApplicationTest.shouldNoteReturnBuddyInAddressbook(WebApplicationTest.java:42)
+
+shouldReturnABuddyInAnAddressBook  Time elapsed: 0.02 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	at AddressBookPackage.WebApplicationTest.shouldReturnABuddyInAnAddressBook(WebApplicationTest.java:34)
+Caused by: java.lang.NullPointerException
+	at AddressBookPackage.WebApplicationTest.shouldReturnABuddyInAnAddressBook(WebApplicationTest.java:34)
+

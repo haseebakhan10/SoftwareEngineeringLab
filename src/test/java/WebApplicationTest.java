@@ -1,6 +1,7 @@
 package AddressBookPackage;
 
 import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.not;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -36,7 +37,7 @@ public class WebApplicationTest {
     }
 
     @Test
-    public void shouldReturnABuddyInAnAddressBook() throws Exception {
+    public void shouldNoteReturnBuddyInAddressbook() throws Exception {
         this.mockMvc.perform(post("/newAddressbook"));
         this.mockMvc.perform(post("/addBuddy?abID=1&buddyName=TestName&buddyNumber=123"));
         this.mockMvc.perform(get("/viewAddressbook?abID=1")).andDo(print()).andExpect(status().isOk())
