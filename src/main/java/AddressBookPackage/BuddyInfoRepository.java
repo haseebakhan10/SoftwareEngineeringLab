@@ -8,4 +8,6 @@ public interface BuddyInfoRepository extends CrudRepository<BuddyInfo, Integer> 
     void deleteById(int id);
 
     BuddyInfo findById(int id);
+
+    BuddyInfo findByName(String name);
 }

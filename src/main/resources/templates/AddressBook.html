@@ -1,17 +1,114 @@
 <!DOCTYPE HTML>
-<html xmlns:th="https://www.thymeleaf.org">
+<html xmlns:th="https://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Haseeb Lab 4</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js}"></script>
 </head>
 <body>
 <h1>Your Addressbook</h1>
-<p th:text = "'Addressbook ID: ' + ${ab.id}"/>
-<tr th:each="buddy: ${ab.myBuddies}">
-    <td th:text="'ID: ' + ${buddy.id}" />
-    <td th:text="'NAME: ' + ${buddy.name}" />
-    <td th:text="'PHONE NUMBER: ' + ${buddy.phoneNumber}" />
+<form id="new" action="#" th:action="@{/newAddressbook}" th:object="${addressBook}" method="post">
+    <input type="submit" value="New Addressbook">
+</form>
+<h4>Your Addressbook ID</h4>
+<table id="aIDs">
+<tr th:each="id: ${ids}">
+    <td th:text="'ID: ' + ${id}" />
     <br/>
 </tr>
+</table>
+<h4>Change Addressbook</h4>
+<form id="viewAb" action="#" th:action="@{/viewAddressbook}" th:object="${addressBook}" method="get">
+    <label for="abID">Addressbook ID:</label><br>
+    <input type="number" id="abID" name="abID"><br><br><br>
+    <input type="submit" value="Get Addressbook">
+</form>
+<span id="s" style="display: none">
+    <table id="buddyIds">
+</table>
+
+<h4>Add Buddy</h4>
+<form id="addB" action="#" th:action="@{/addBuddy}" th:object="${buddyInfo}" method="post">
+    <input type="hidden" id="abID2" name="abID">
+    <label for="buddyName">Buddy Name:</label><br>
+    <input type="text" id="buddyName" name="buddyName"><br><br>
+    <label for="buddyNumber">Buddy Number:</label><br>
+    <input type="number" id="buddyNumber" name="buddyNumber"><br><br><br>
+    <input type="submit" value="Add Buddy">
+</form>
+
+<h4>Remove Buddy</h4>
+<form id="remB" action="#" th:action="@{/removeBuddy}" th:object="${buddyInfo}" method="post">
+   <input type="hidden" id="abID3" name="abID">
+    <label for="index">Buddy ID:</label><br>
+    <input type="number" name="index" id="index"><br><br><br>
+    <input type="submit" value="Remove Buddy">
+</form>
+</span>
+<script>
+    $(document).ready(function(){
+        $("#new").submit(function(e){
+           e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: 'http://localhost:8081/newAddressbook',
+                dataType: 'json',
+                success: function(data, status, xhr) {
+                    $('#aIDs').append("<tr><td>" + data.id + "</td></tr>");
+                    $('#s').removeAttr("style");
+                }
+            });
+        });
+
+        $("#addB").submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: 'http://localhost:8081/addBuddy?' + $("#addB").serialize(),
+                dataType: 'json',
+                success: function(data, status, xhr) {
+
+                        $('#buddyIds').append("<tr><td>ID: " + data.id + "</td><td>NAME: " + data.name + "</td><td>PHONE NUMBER: " + data.phoneNumber + "</td></tr>");
+
+                }
+            });
+        });
+
+        $("#remB").submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: 'http://localhost:8081/removeBuddy?' + $("#remB").serialize(),
+                dataType: 'json',
+                success: function(data, status, xhr) {
+                    var index;
+                    $('#buddyIds td:first-child').each(function(i, row) {
+                        if(("ID: " + data) === $(this).text()) {
+                            index = i;
+                        }
+                    })
+                    $('#buddyIds tr:eq(' + index + ')').remove();
+                }
+            });
+        });
+
+        $("#viewAb").submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                url: 'http://localhost:8081/viewAddressbook?' + $("#viewAb").serialize(),
+                dataType: 'json',
+                success: function(data, status, xhr) {
+                    for(var a = 0; a < data.myBuddies.length; a++) {
+                        $('#buddyIds').append("<tr><td>ID: " + data.myBuddies[a].id + "</td>");
+                        $('#buddyIds').append("<td>NAME: " + data.myBuddies[a].name + "</td>");
+                        $('#buddyIds').append("<td>PHONE NUMBER: " + data.myBuddies[a].phoneNumber + "</td></tr>");
+                    }
+                    $('#abID2').val(data.id)
+                    $('#abID3').val(data.id)
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>

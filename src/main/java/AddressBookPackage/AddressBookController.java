@@ -1,6 +1,8 @@
 package AddressBookPackage;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -78,17 +80,18 @@ public class AddressBookController {
         abr.save(adB);
         ab.addBuddy(temp);
 //        g.update(ab.getMyBuddies());
-        return temp;
+        return bir.findByName(name);
     }
 
     @PostMapping("/removeBuddy")
-    public void removeBuddy(@RequestParam(value = "abID") int abID, @RequestParam(value = "index") int index) {
+    public int removeBuddy(@RequestParam(value = "abID") int abID, @RequestParam(value = "index") int index) {
         if (index == -1) {
             abr.save(removeDefaultBuddy());
         } else {
             abr.save(removeBuddyFunction(index, abr.findById(abID)));
         }
 //        g.update(ab.getMyBuddies());
+        return index;
     }
 
     public AddressBook removeDefaultBuddy() {
@@ -115,8 +118,9 @@ public class AddressBookController {
     }
 
     @PostMapping("/newAddressbook")
-    public void newAddressbook() {
+    public AddressBook newAddressbook() {
         ab = new AddressBook();
         abr.save(ab);
+        return ab;
     }
 }
