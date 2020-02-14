@@ -3,15 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b6cc61-cefd-4513-967c-d11ecb931a0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/SoftwareEngineeringLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SoftwareEngineeringLab.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BuddyInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BuddyInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HttpRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HttpRequestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ViewControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ViewControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WebApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AddressBookPackage/AddressBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AddressBookPackage/AddressBookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AddressBookPackage/WebApplicationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AddressBookPackage/WebApplicationTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/EngineeringLab/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,46 +55,44 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1120755538">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="5" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="71" />
+            <state relative-caret-position="775">
+              <caret line="119" column="21" lean-forward="true" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/WebApplicationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="32" column="50" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/BuddyInfoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="272">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,8 +123,12 @@
         <option value="$PROJECT_DIR$/EngineeringLab/pom.xml" />
         <option value="$PROJECT_DIR$/EngineeringLab/src/test/java/AddressBookTest.java" />
         <option value="$PROJECT_DIR$/EngineeringLab/src/test/java/BuddyInfoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/WebApplicationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/WebApplicationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BuddyInfoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HttpRequestTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ViewControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookGUI.java" />
       </list>
     </option>
   </component>
@@ -151,28 +150,23 @@
           <item name="AddressBook" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="AddressBook" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="939" />
-    <option name="y" value="331" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -207,19 +201,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="AddressBookPackage" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SoftwareEngineeringLab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SoftwareEngineeringLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SoftwareEngineeringLab" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SoftwareEngineeringLab" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -233,8 +214,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581106138893" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581701957625" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -258,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WebApplicationTest">
+  <component name="RunManager" selected="Spring Boot.Launcher">
     <configuration name="AddressBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AddressBook" />
       <option name="PACKAGE_NAME" value="" />
@@ -271,20 +252,6 @@
       <module name="AddressBook" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BuddyInfoTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HttpRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AddressBook" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AddressBookPackage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddressBookPackage.HttpRequestTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -319,20 +286,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Launcher" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineeringLab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AddressBookPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="AddressBookPackage.Launcher" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.HttpRequestTest" />
       <item itemvalue="JUnit.HttpRequestTest.greetingShouldReturnDefaultMessage" />
       <item itemvalue="JUnit.AddressBookTest" />
       <item itemvalue="JUnit.BuddyInfoTest" />
       <item itemvalue="JUnit.WebApplicationTest" />
+      <item itemvalue="Spring Boot.Launcher" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Launcher" />
         <item itemvalue="JUnit.WebApplicationTest" />
         <item itemvalue="JUnit.BuddyInfoTest" />
         <item itemvalue="JUnit.AddressBookTest" />
         <item itemvalue="JUnit.HttpRequestTest.greetingShouldReturnDefaultMessage" />
-        <item itemvalue="JUnit.HttpRequestTest" />
       </list>
     </recent_temporary>
   </component>
@@ -348,6 +328,7 @@
       <updated>1581098149232</updated>
       <workItem from="1581098150642" duration="7229000" />
       <workItem from="1581105478669" duration="642000" />
+      <workItem from="1581701589558" duration="263000" />
     </task>
     <servers />
   </component>
@@ -384,13 +365,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7871000" />
+    <option name="totallyTimeSpent" value="8134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15724947" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15884861" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -401,7 +382,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3261105" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3261105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -446,37 +427,62 @@
     <entry file="file://$PROJECT_DIR$/EngineeringLab/src/test/java/AddressBookTest.java" />
     <entry file="file://$PROJECT_DIR$/EngineeringLab/src/test/java/BuddyInfoTest.java" />
     <entry file="file://$PROJECT_DIR$/EngineeringLab/src/main/java/AddressBookPackage/AddressBookController.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/AddressBookTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BuddyInfoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="339">
+          <caret line="88" column="13" lean-forward="true" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HttpRequestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ViewControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/WebApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="32" column="50" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="50" />
+        <state relative-caret-position="61">
+          <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="775">
+          <caret line="119" column="21" lean-forward="true" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AddressBookPackage/AddressBookGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="71" />
+        <state relative-caret-position="272">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

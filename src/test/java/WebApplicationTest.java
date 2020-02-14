@@ -21,29 +21,29 @@ public class WebApplicationTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @Test
-    public void shouldReturnDefaultMessageWithNewAddressBookAndNoBuddies() throws Exception {
-        this.mockMvc.perform(post("/newAddressbook"));
-        this.mockMvc.perform(get("/viewAddressbook?abID=1")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(containsString("Your Addressbook")));
-    }
-
-    @Test
-    public void shouldReturnABuddyInAnAddressBook() throws Exception {
-        this.mockMvc.perform(post("/newAddressbook"));
-        this.mockMvc.perform(post("/addBuddy?abID=1&buddyName=TestName&buddyNumber=123"));
-        this.mockMvc.perform(get("/viewAddressbook?abID=1")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(containsString("TestName")));
-    }
-
-    @Test
-    public void shouldNoteReturnBuddyInAddressbook() throws Exception {
-        this.mockMvc.perform(post("/newAddressbook"));
-        this.mockMvc.perform(post("/addBuddy?abID=1&buddyName=TestName&buddyNumber=123"));
-        this.mockMvc.perform(get("/viewAddressbook?abID=1")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string((containsString("TestName"))));
-        this.mockMvc.perform(post("/removeBuddy?abID=1&index=-1"));
-        this.mockMvc.perform(get("/viewAddressbook?abID=1")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(not(containsString("TestName"))));
-    }
+//    @Test
+//    public void shouldReturnDefaultMessageWithNewAddressBookAndNoBuddies() throws Exception {
+//        this.mockMvc.perform(post("/newAddressbook"));
+//        this.mockMvc.perform(get("/viewAddressbook?abID=1")).andDo(print()).andExpect(status().isOk())
+//                .andExpect(content().string(containsString("Your Addressbook")));
+//    }
+//
+//    @Test
+//    public void shouldReturnABuddyInAnAddressBook() throws Exception {
+//        this.mockMvc.perform(post("/newAddressbook"));
+//        this.mockMvc.perform(post("/addBuddy?abID=1&buddyName=TestName&buddyNumber=123"));
+//        this.mockMvc.perform(get("/viewAddressbook?abID=1")).andDo(print()).andExpect(status().isOk())
+//                .andExpect(content().string(containsString("TestName")));
+//    }
+//
+//    @Test
+//    public void shouldNoteReturnBuddyInAddressbook() throws Exception {
+//        this.mockMvc.perform(post("/newAddressbook"));
+//        this.mockMvc.perform(post("/addBuddy?abID=1&buddyName=TestName&buddyNumber=123"));
+//        this.mockMvc.perform(get("/viewAddressbook?abID=1")).andDo(print()).andExpect(status().isOk())
+//                .andExpect(content().string((containsString("TestName"))));
+//        this.mockMvc.perform(post("/removeBuddy?abID=1&index=-1"));
+//        this.mockMvc.perform(get("/viewAddressbook?abID=1")).andDo(print()).andExpect(status().isOk())
+//                .andExpect(content().string(not(containsString("TestName"))));
+//    }
 }

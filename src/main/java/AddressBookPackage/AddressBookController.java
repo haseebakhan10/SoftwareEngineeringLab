@@ -23,51 +23,51 @@ public class AddressBookController {
 
     @Autowired
     public AddressBookController(AddressBook ab, AddressBookGUI g) {
-//        g.getNab().addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                newAddressbook();
-//                getG().update(getAb().getMyBuddies());
-//                getG().getFrame().setTitle("Addressbook ID: " + getAb().getId());
-//            }
-//        });
-//        g.getNb().addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                JTextField name = new JTextField(20);
-//                JTextField number = new JTextField(15);
-//
-//                JPanel myPanel = new JPanel();
-//                myPanel.add(new JLabel("Name:"));
-//                myPanel.add(name);
-//                myPanel.add(Box.createHorizontalStrut(15)); // a spacer
-//                myPanel.add(new JLabel("Phone Number:"));
-//                myPanel.add(number);
-//
-//                int result = JOptionPane.showConfirmDialog(null, myPanel,
-//                        "Enter the name and phone number...", JOptionPane.OK_CANCEL_OPTION);
-//
-//                if (result == JOptionPane.OK_OPTION) {
-//                    addBuddy(getAb().getId(), name.getText(), Integer.parseInt(number.getText()));
-//                }
-//            }
-//        });
-//        g.getRb().addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                String pos = JOptionPane.showInputDialog(getG().getFrame(),
-//                        "What position would you like to remove?", null);
-//                removeBuddy(getAb().getId(), Integer.parseInt(pos));
-//            }
-//        });
-//        g.update(ab.getMyBuddies());
-//        g.getDb().addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                JOptionPane.showMessageDialog(getG().getFrame(),
-//                        bir.findAll().toString());
-//            }
-//        });
+        g.getNab().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                newAddressbook();
+                getG().update(getAb().getMyBuddies());
+                getG().getFrame().setTitle("Addressbook ID: " + getAb().getId());
+            }
+        });
+        g.getNb().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JTextField name = new JTextField(20);
+                JTextField number = new JTextField(15);
+
+                JPanel myPanel = new JPanel();
+                myPanel.add(new JLabel("Name:"));
+                myPanel.add(name);
+                myPanel.add(Box.createHorizontalStrut(15)); // a spacer
+                myPanel.add(new JLabel("Phone Number:"));
+                myPanel.add(number);
+
+                int result = JOptionPane.showConfirmDialog(null, myPanel,
+                        "Enter the name and phone number...", JOptionPane.OK_CANCEL_OPTION);
+
+                if (result == JOptionPane.OK_OPTION) {
+                    addBuddy(getAb().getId(), name.getText(), Integer.parseInt(number.getText()));
+                }
+            }
+        });
+        g.getRb().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String pos = JOptionPane.showInputDialog(getG().getFrame(),
+                        "What position would you like to remove?", null);
+                removeBuddy(getAb().getId(), Integer.parseInt(pos));
+            }
+        });
+        g.update(ab.getMyBuddies());
+        g.getDb().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(getG().getFrame(),
+                        bir.findAll().toString());
+            }
+        });
     }
 
     @PostMapping("/addBuddy")

@@ -12,8 +12,8 @@ public class ViewControllerTest {
     @Autowired
     private ViewController controller;
 
-    @Test
-    public void contexLoads() throws Exception {
-        assertThat(controller).isNotNull();
-    }
+//    @Test
+//    public void contexLoads() throws Exception {
+//        assertThat(controller).isNotNull();
+//    }
 }
